@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+/* CELULAR */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #005e03 !important;
+}
+
+#logo {
+    padding-left: 5px;
+}
+
+main {
+    color: black;
+}
+
+.topo {
+    background-color: #006705;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > h1 {
+    margin-top: 10px;
+    margin-left: 8px;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+main > h2 {
+    font-size: 1.5em;
+    margin-left: 8px;
+    font-weight: bolder;
+}
+
+main > h3 {
+    font-size: 1.3em;
+    margin-left: 8px;
+    font-weight: bolder;
+}
+
+main > h4 {
+    font-size: 1.1em;
+    margin-left: 8px;
+    font-weight: bolder;
+}
+
+main > p {
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+main > p > a {
+    color: #005e03;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main > ul {
+    margin-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+main > ul > li {
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+main > ol {
+    margin-left: 20px;
+    padding-left: 20px; /* para alinhamento dos números */
+    counter-reset: item;
+}
+
+main > ol > li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    text-align: justify;
+    list-style-type: none;
+    position: relative;
+    padding-left: 25px;
+}
+
+main > ol > li:before {
+    counter-increment: item;
+    content: counter(item) ".";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #006705;
+}
+
+h1 {
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+p.tutorial {
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+p#creditos {
+    color: gray;
+    font-size: 0.7em;
+}
+
+strong {
+    margin-bottom: 10px;
+}
+
+li.texto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main > img {
+    width: 100vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main > iframe {
+    width: 100vw;
+    height: 315px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #1B5E20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    gap: 10px; /* Espaço entre os ícones */
+    margin-bottom: 10px; /* Espaço abaixo dos ícones */
+}
+
+footer > p#des > a {
+    color: #ffffff;
+    font-weight: 0.8em;
+    text-decoration: none;
+}
+
+i#insta {
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+i#youtube {
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+#accessibility-buttons {
+    position: fixed;
+    right: 10px; /* Mantém na lateral direita */
+    top: 70%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Garante que fique centralizado */
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+#accessibility-buttons button {
+    background-color: #005e03; /* Cor de fundo */
+    color: white; /* Cor do texto ou ícone */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas para um design mais amigável */
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer; /* Indica que é clicável */
+    transition: background-color 0.3s; /* Transição suave para efeitos */
+}
+
+#accessibility-buttons button:hover {
+    background-color: #0f9416; /* Cor de fundo ao passar o mouse */
+}
+
+.audio-custom {
+    margin-left: 8px; /* Margem lateral para celulares */
+    margin-right: 8px; /* Margem lateral para celulares */
+    width: 100%; /* Garante que o áudio ocupe toda a largura disponível */
+    box-sizing: border-box; /* Inclui as margens no cálculo da largura */
+}
+
+
+

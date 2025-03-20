@@ -1,0 +1,28 @@
+function searchNews() {
+    const input = document.getElementById('search-input').value.toLowerCase();
+    const newsItems = document.getElementsByClassName('informacao');
+
+    // Se o input estiver vazio, restaura a lista de notícias
+    if (input === '') {
+        for (let i = 0; i < newsItems.length; i++) {
+            newsItems[i].style.display = '';
+        }
+        return;
+    }
+
+    for (let i = 0; i < newsItems.length; i++) {
+        const item = newsItems[i];
+        const caption = item.getElementsByTagName('figcaption')[0].textContent.toLowerCase();
+        if (caption.includes(input)) {
+            item.style.display = '';
+        } else {
+            item.style.display = 'none';
+        }
+    }
+}
+
+// Adiciona evento de clique ao botão
+document.getElementById('search-button').onclick = searchNews;
+
+// Adiciona evento de tecla solta (keyup) ao input
+document.getElementById('search-input').addEventListener('keyup', searchNews);

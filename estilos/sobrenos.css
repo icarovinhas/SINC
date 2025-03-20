@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/* CELULAR */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%; /* Garante que o body ocupe 100% da altura da tela */
+    display: flex;
+    flex-direction: column; /* Coloca os filhos em coluna */
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.navbar {
+    background-color: #082879 !important;
+}
+
+#logo {
+    padding-left: 5px;
+}
+
+main {
+    background-color: rgb(241, 241, 241);
+    color: black;
+    width: 100vw;
+    flex: 1; /* Faz com que o main ocupe todo o espaço disponível */
+}
+
+main > p {
+    font-size: 1.1em;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+main > div > h1 {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #031b58;
+}
+
+#foto {
+    text-align: center;
+}
+
+div > img {
+    border-radius: 15px;
+    width: 90vw;
+}
+
+#objetivos {
+    background-color: #e0e0e07a;
+}
+
+#missao, #visao, #valores {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#empresa, #olho, #diamante {
+    font-size: 3.9em;
+    color: #0e3eb8;
+}
+
+#margim {
+    padding-top: 5px;
+}
+
+#diminuir {
+    margin-top: -5px;
+}
+
+.topo {
+    background-color: #092E8D;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+footer > p#des > a {
+    color: rgb(97, 97, 97);
+    font-weight: 0.8em;
+    text-decoration: none;
+}
+
+i#insta {
+    color: #031b58;
+    font-size: 1.2em;
+}
+
+i#youtube {
+    color: #031b58;
+    font-size: 1.4em;
+}
