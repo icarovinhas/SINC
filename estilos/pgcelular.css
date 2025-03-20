@@ -6,6 +6,8 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box; 
+ 
 }
 
 body, html {
@@ -158,6 +160,7 @@ li.texto {
 
 main > img {
     width: 100vw;
+    height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -170,6 +173,7 @@ main > iframe {
 }
 
 footer {
+    width: 100%;
     margin-top: 40px;
     padding-top: 20px;
     padding-left: 20px;
@@ -178,6 +182,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .icons {
@@ -235,7 +240,7 @@ i#youtube {
 .audio-custom {
     margin-left: 8px; /* Margem lateral para celulares */
     margin-right: 8px; /* Margem lateral para celulares */
-    width: 100%; /* Garante que o áudio ocupe toda a largura disponível */
+    width: 96%; /* Garante que o áudio ocupe toda a largura disponível */
     box-sizing: border-box; /* Inclui as margens no cálculo da largura */
 }
 
