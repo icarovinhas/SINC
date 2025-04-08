@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* ===== RESET & ESTILOS GERAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: linear-gradient(135deg, #4CAF50, #1B5E20);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.hero {
+    padding: 25px 0;
+    text-align: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.project-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.about-container {
+    flex: 1;
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-content h1 {
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.about-content h1 span {
+    color: #C8E6C9;
+}
+
+/* TEXTO EXPLICATIVO */
+.hero-text {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px 0;
+    border-left: 4px solid #4CAF50;
+}
+
+.hero-text strong {
+    color: #C8E6C9;
+    font-weight: 700;
+}
+
+/* CARDS */
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h3 {
+    color: #1B5E20;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    color: #3b3b3b;
+}
+
+/* EQUIPE */
+.about-team {
+    background: rgba(242, 242, 242, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-team h2 {
+    color: #18581d;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 15px;
+}
+
+.about-team p {
+    color: #3b3b3b;
+}
+
+/* BOTÃO */
+.cta {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #fff;
+    color: #1B5E20;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    margin: 20px 0;
+    transition: all 0.3s;
+    border: 2px solid #fff;
+}
+
+.cta:hover {
+    background: transparent;
+    color: #fff;
+}
+
+/* FOOTER */
+footer {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .about-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .project-logo {
+        font-size: 20px;
+    }
+    
+    .hero-text {
+        padding: 20px;
+    }
+    
+    .about-card {
+        min-width: 100%;
+    }
+}
+
+/* ===== BOTÃO CORRIGIDO ===== */
+.cta-wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cta {
+    display: block; /* Mudar para block */
+    width: fit-content; /* Ajusta ao conteúdo */
+    margin: 30px auto; /* Centraliza horizontalmente */
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    color: white;
+    background: #388E3C;
+    text-decoration: none;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+    font-weight: 700;
+    text-align: center; /* Garante texto centralizado */
+}
+
+.cta:hover {
+    transform: scale(1.05);
+    background: #2E7D32;
+    border-color: white;
+}
+
+.cta:active {
+    transform: translateY(1px);
+}
